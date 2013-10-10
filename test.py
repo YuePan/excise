@@ -20,5 +20,3 @@ class D(object):
         super(D, self).__init__()
         self.arg = arg
 
-for dfasd in items:
-    code...
