@@ -16,10 +16,10 @@ def loadDataSet():
         dataMat.append([1.0, float(lineArr[0]), float(lineArr[1])])
         labelMat.append(int(lineArr[2]))
     return dataMat, labelMat
-    
+
 def sigmoid(inX):
     return 1.0 / (1 + np.exp(-inX))
-    
+
 def gradAscent(dataMatIn, classLabels):
     dataMatrix = np.mat(dataMatIn)
     labelMat = np.mat(classLabels).transpose()
@@ -32,3 +32,4 @@ def gradAscent(dataMatIn, classLabels):
         error = (labelMat - h)
         weights = weights + alpha * dataMatrix.transpose() * error
     return weights
+
