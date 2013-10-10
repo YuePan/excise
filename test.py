@@ -21,3 +21,5 @@ class D(object):
         super(D, self).__init__()
         self.arg = arg
 
+def abc():
+    pass
