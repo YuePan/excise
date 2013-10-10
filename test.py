@@ -23,3 +23,6 @@ class D(object):
 
 def abc():
     pass
+
+def somefunc():
+    pass
